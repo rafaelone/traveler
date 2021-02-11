@@ -1,13 +1,14 @@
-import '../styles/tailwind.css'
-import '../styles/globals.css'
-import { AnimateSharedLayout } from 'framer-motion'
+import { AnimateSharedLayout } from 'framer-motion';
+import { AppProps } from 'next/app';
+import GlobalStyles from '../styles/GlobalStyles';
 
-function MyApp({ Component, pageProps }) {
-  return  (
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
     <AnimateSharedLayout>
-        <Component {...pageProps} />
+      <GlobalStyles />
+      <Component {...pageProps} />
     </AnimateSharedLayout>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
