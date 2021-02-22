@@ -33,17 +33,17 @@ export const Header = styled.header`
     width: 174px;
     height: 48px;
     border: none;
-    background: #dde9f0;
+    background: var(--background-button-header);
     border-radius: 10px;
-    color: #115d8c;
+    color: var(--color-button-header);
     font-family: 'Heeboo';
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     transition: all 0.2s;
     &:hover {
-      background: ${shade(0.1, '#dde9f0')};
-      color: ${shade(0.3, '#115d8c')};
+      background: ${shade(0.1, 'var(--background-button-header)')};
+      color: ${shade(0.3, 'var(--color-button-header)')};
     }
 
     @media screen and (max-width: 1024px) {
@@ -78,7 +78,7 @@ export const LeftSide = styled.div`
     font-weight: 600;
     font-size: 80px;
     line-height: 74px;
-    color: #123952;
+    color: var(--color-headings);
     max-width: 317px;
     line-height: 74px;
 
@@ -94,7 +94,7 @@ export const LeftSide = styled.div`
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #617480;
+    color: var(--color-text);
     max-width: 330px;
     display: block;
     margin-top: 40px;
@@ -107,17 +107,17 @@ export const LeftSide = styled.div`
   button {
     width: 329px;
     height: 72px;
-    background: #f25d27;
+    background: var(--orange);
     border-radius: 10px;
     font-family: 'Heebo';
     font-weight: 400px;
     font-size: 18px;
     line-height: 26px;
     border: none;
-    color: #ffffff;
+    color: var(--white);
     margin-top: 70px;
     &:hover {
-      background: ${shade(0.1, '#f25d27')};
+      background: ${shade(0.1, 'var(--orange)')};
     }
 
     @media screen and (max-width: 1024px) {
@@ -179,7 +179,7 @@ export const Column = styled.div`
 export const ColumnItem = styled.div`
   width: 304px;
   height: 316px;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 20px;
   animation: ${animateBefore} 1s;
   border-radius: 10px 10px 10px 10px;
@@ -202,7 +202,7 @@ export const ColumnItemInfo = styled.div`
     border-radius: 10px 10px 0px 0px;
   }
   strong {
-    color: #123952;
+    color: var(--color-strong);
     font-family: 'Barlow';
     font-weight: 600;
     line-height: 22px;
@@ -211,7 +211,7 @@ export const ColumnItemInfo = styled.div`
   span {
     display: block;
     margin-top: 7.6px;
-    color: #617480;
+    color: var(--color-text);
     font-family: 'Roboto';
     font-size: 15px;
     font-weight: 400;
